@@ -9,11 +9,11 @@ RE_EPISODE_SUMMARY     = Regex('<[^<]+?>')
 RE_EPISODE_DETAILS     = Regex('Series (?P<series>[0-9]+) Episode (?P<episode>[0-9]+)')
 
 BASE_URL               = 'http://www.channel4.com'
-PROGRAMMES_CATEGORIES  = '%s/programmes/tags/4od' % BASE_URL
-PROGRAMMES_FEATURED    = '%s/programmes/4od' % BASE_URL
-PROGRAMMES_BY_DATE     = '%s/programmes/4od/episode-list/date/%%s' % BASE_URL
-PROGRAMMES_BY_CATEGORY = '%s/programmes/tags/%%s/4od/title/page-%%%%d' % BASE_URL
-PROGRAMMES_BY_LETTER   = '%s/programmes/atoz/%%s/4od/page-%%%%d' % BASE_URL
+PROGRAMMES_CATEGORIES  = '%s/programmes/categories' % BASE_URL
+PROGRAMMES_FEATURED    = '%s/programmes/catchup' % BASE_URL
+PROGRAMMES_BY_DATE     = '%s/programmes/catchup/%%s' % BASE_URL
+PROGRAMMES_BY_CATEGORY = '%s/programmes/categories/%%s/item-list/page-%%%%d' % BASE_URL
+PROGRAMMES_BY_LETTER   = '%s/programmes/categories/all/%%s' % BASE_URL
 PROGRAMMES_SEARCH      = '%s/programmes/long-form-search/?q=%%s' % BASE_URL
 
 ###################################################################################################
